@@ -10,6 +10,6 @@ export DEBUG=1 #for debug logs
 node app.js
 ```
 
-Open (http://localhost:8222) in your browser
+Open (http://localhost:8222/certs) in your browser
 
 Enjoy.
