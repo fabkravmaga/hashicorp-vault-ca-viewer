@@ -1,0 +1,30 @@
+{
+  "name": "hashicorp-vault-ca-viewer",
+  "version": "1.0.0",
+  "description": "views certificates in Vault CA",
+  "main": "app.js",
+  "scripts": {
+    "test": "node test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/3jmaster/hashicorp-vault-ca-viewer.git"
+  },
+  "keywords": [
+    "hashicorp",
+    "vault",
+    "ca"
+  ],
+  "author": "3jmaster",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/3jmaster/hashicorp-vault-ca-viewer/issues"
+  },
+  "homepage": "https://github.com/3jmaster/hashicorp-vault-ca-viewer#readme",
+  "dependencies": {
+    "body-parser": "^1.18.3",
+    "express": "^4.16.4",
+    "superagent": "^4.1.0",
+    "x509": "^0.3.4"
+  }
+}
