@@ -3,15 +3,17 @@ const bodyParser = require('body-parser');
 const routes = require('./routes');
 const port = 8222;
 
-vaultAddr = process.env["VAULT_ADDR"] || 'https://vault.ai'
-vaultToken = process.env["VAULT_TOKEN"] || '';
-vaultCABackend = process.env["VAULT_CA_BACKEND"] || '';
+// vaultAddr = process.env["VAULT_ADDR"] || 'https://vault.ai'
+// vaultToken = process.env["VAULT_TOKEN"] || '';
+// vaultCABackend = process.env["VAULT_CA_BACKEND"] || '';
 DEBUG = process.env["DEBUG"] || 0; //disable for production
 process.env["NODE_TLS_REJECT_UNAUTHORIZED"] = 0; //enable for production
 
 
 const app = express();
 app.use(bodyParser.json());
+app.use(bodyParser.urlencoded({ extended: true })); // support encoded bodies
+
 app.use(routes);
 
 app.use((req, res, next) => {
