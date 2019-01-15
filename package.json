@@ -4,7 +4,8 @@
   "description": "views certificates in Vault CA",
   "main": "app.js",
   "scripts": {
-    "test": "node test"
+    "dev": "nodemon app.js",
+    "start": "node app.js"
   },
   "repository": {
     "type": "git",
