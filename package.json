@@ -24,7 +24,7 @@
   "homepage": "https://github.com/3jmaster/hashicorp-vault-ca-viewer#readme",
   "dependencies": {
     "body-parser": "^1.18.3",
-    "express": "^4.16.4",
+    "express": "^4.17.3",
     "superagent": "^4.1.0",
     "x509": "^0.3.4"
   }
